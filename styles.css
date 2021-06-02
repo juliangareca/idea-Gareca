@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&display=swap');
+
+/* font-family: 'Average Sans', sans-serif;*/
+
+@media (min-width: 480px) and (max-width: 599px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "header"
+      "iframe"
+      "footer";
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .item5 {
+    display: block;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "header"
+      "section"
+      "iframe"
+      "footer";
+    }
+}
+@media (min-width: 1024px) {
+    .item5 {
+      display: block;
+    }
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas:
+      "header"
+      "section"
+      "iframe"
+      "footer";
+    }
+}
+/** reset **/ 
+
+*{
+  margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+  box-sizing: border-box;
+}
+
+A {text-decoration: none;} 
+
+/* atributos generales */
+
+.body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-image: url(./recursos/imagenes/background.jpg);
+  background-size: cover;
+  
+}
+.padding{
+  padding: 25px;
+  grid-area: header;
+
+}
+.iframe{
+  display: block;
+  text-align: center;
+  grid-area: iframe;
+  padding-top: 55px;
+}
+
+.textoGeneral{
+  text-decoration: none;
+  text-align: left;
+} 
+
+
+/* atributos tabla */ 
+
+.formatoTabla{
+  width: max-content;
+  text-align: center;
+  margin: auto;
+  background-color: #ffffff91;
+  padding: 50px;
+  border-width: 2px;
+}
+
+
+table {
+  border: 5px solid;
+  background-color: white;
+  margin: auto;
+  
+}
+
+th {
+  border: 2px solid;
+  
+}
+
+tr, td {
+  border: 2px solid;
+  text-align: center;
+  color:black;
+  
+}
+
+#td{
+  color:rgb(0, 0, 0);
+}
+
+
+/* Textos del titulo */
+
+.titulos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
+
+.hipervinculo{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.h1{
+  text-decoration: overline;
+  font-family: 'Average Sans', sans-serif;
+  
+
+}
+#h2{
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+  font-family: 'Average Sans', sans-serif;
+
+}
+
+/* Menu navegador */
+
+nav{
+  text-align: center;
+  display: inline;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;  
+  position: relative;
+  width: -webkit-fill-available;
+
+}
+
+ul ul {
+position: absolute;
+display: none;
+}
+ul ul li {
+  display: block;
+}
+ul li:hover ul {
+  display:block;
+  text-align: left;
+
+}
+
+li{
+  color: black;
+  display: inline-block;
+  font-family: 'Average Sans', sans-serif;
+  position: relative;
+  text-align: left;
+  
+}
+
+a:hover {
+  color:#100;
+}
+
+/* imagen gato fija con hipervinculo arriba a la izquierda */
+
+#imagenLogo{
+  border-radius: 360px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+/* redes solciales y su formato*/
+
+
+.imagen{
+  width: 100px;
+  height: 100px;
+  
+}
+
+.redesSociales{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  
+}
+
+/* icono de wpp fijo en la esquina inferior derecha */ 
+
+
+.position{
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  
+}
+
+/* seccion clientes felices con sus imagenes */
+
+#img{
+  border-radius: 250px;
+}
+
+.width{
+  width: 600px ;
+  margin: auto;
+}
+
+
+
+/* grid aplicado a la pagina principal*/
+
+.grid{
+  background-color: beige;
+  width: 90vw;
+  height: 60vh;
+  border: 2px;
+  margin-left: 5%;
+  margin-bottom: 3%;
+  display: grid;
+  grid-area: section;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 20vh 20vh 20vh;
+  grid-template-areas: 
+  "img arriba"
+  "img arriba"
+  "img arriba" ;
+}
+
+.imagenGatos{
+  grid-area: img;
+  background-image: url(/recursos/imagenes/rascadorm1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.arriba{
+  grid-area: arriba;
+  font-size: larger 0em; 
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+  background: linear-gradient(90deg, rgba(233,223,215,1) 11%, rgba(103,103,103,1) 100%);  
+  padding: 20px; 
+}
+
+/*texto dia del gato y texto de nosotros */
+.texto{
+  text-align: justify;
+  font-size: 1.5rem;
+  padding: 65px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  font-family: 'Average Sans', sans-serif;
+}
+
+.tituloDiadelGato{
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 40px;
+  text-decoration: underline;
+}
+
+/*icono tienda */
+
+.rotate {
+  animation: rotation 1s infinite linear;
+  width: 50px ;
+  height: 50px ;
+
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/** -------------------------**/
+
+.flexContactenos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  }
+
+/* flex abajo del grid */
+
+.flexMain{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 90vw;
+  margin: auto;
+  align-items: center;
+  }
+
+div div{
+  text-align: center;
+  }
+.envios{
+  font-size: 18px;
+
+
+}
+
+.flexGrid{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-decoration: none;
+  padding-top: 40px;
+}
+.paddingFlex{
+  padding-top: 25px;
+}
+
+.back{
+  background-color: rgb(177, 125, 125);
+}
+
+.camio{
+  width: 25px;
+  height: 25px;
+}
+
+/* footer*/
+
+.footer{
+  margin: 20px;
+  grid-area: footer;
+}
+
+h4{
+  text-align: center;
+  font-family: 'Average Sans', sans-serif;  margin-top: 25px;
+  padding: 20px;
+  color: rgb(0, 0, 0);
+}
+
+/* codigos para el boot*/
+
+.paddingNav{
+  padding-left: 100px;
+}
+  
+  
