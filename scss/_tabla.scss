@@ -1,0 +1,39 @@
+.formatoTabla{
+    width: max-content;
+    text-align: center;
+    margin: auto;
+    background-color: #ffffff91;
+    padding: 50px;
+    border-width: 2px;
+  }
+
+.imputColor{
+  background-color: $imputColor;
+}
+  
+  
+  table {
+    border: 5px solid;
+    background-color: white;
+    // margin: 50px;
+    margin-right: 500px;
+  }
+  
+  
+  tr, td {
+    text-align: center;
+    justify-content: center ;
+    
+  }
+
+  .hipervinculo{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+  
+
+  .imagenTabla:hover{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transition:all 1s ease-in-out;}

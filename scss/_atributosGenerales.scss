@@ -1,0 +1,27 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    font-family: $fontFamily2;
+    background-image: url(../recursos/imagenes/background.jpg);
+    background-size: cover;
+    
+  }
+  .padding{
+    padding: 25px;
+    grid-area: header;
+  
+  }
+  .iframe{
+    display: block;
+    text-align: center;
+    grid-area: iframe;
+    padding-top: 55px;
+  }
+  
+  .textoGeneral{
+    text-decoration: none;
+    text-align: left;
+  } 
+  

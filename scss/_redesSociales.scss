@@ -1,0 +1,17 @@
+.imagen{
+    width: 100px;
+    height: 100px;
+    
+  }
+  
+  .redesSociales{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    
+  }
+  
+.imagen:hover
+ {-webkit-transform:scale(1.3);transform:scale(1.3);
+  transition: all 1s ease-in-out;}
