@@ -1,0 +1,3 @@
+@for $w from 1 through 100 {
+    .w-#{$w} { width: $w * 1%; }
+}

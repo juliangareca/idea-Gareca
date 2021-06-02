@@ -1,0 +1,41 @@
+nav{
+    text-align: center;
+    display: inline;
+  }
+  
+  ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;  
+    position: relative;
+    width: -webkit-fill-available;
+  
+  }
+  
+  ul ul {
+  position: absolute;
+  display: none;
+  }
+  ul ul li {
+    display: block;
+  }
+  ul li:hover ul {
+    display:block;
+    text-align: left;
+  
+  }
+  
+  li{
+    color: black;
+    display: inline-block;
+    font-family: 'Average Sans', sans-serif;
+    position: relative;
+    text-align: left;
+    
+  }
+  
+  a:hover {
+    color:#100;
+  }
+  

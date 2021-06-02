@@ -1,0 +1,29 @@
+.flexNosotros{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: center;
+    padding-left: 15px;
+    
+}
+
+  .kibita{
+    width: 450px;
+    grid-area: kibita;
+    background-image: url(../recursos/imagenes/kibita.JPG);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .tituloNosotros{
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 50px;
+    letter-spacing: 1px;
+    font-family: $fontFamily1;
+    grid-area: texto;
+    padding: 15px;
+
+  }
+
+

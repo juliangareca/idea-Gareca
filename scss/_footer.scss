@@ -1,0 +1,22 @@
+.footer{
+    margin: 20px;
+    grid-area: footer;
+  }
+  
+  .footer__h4{
+    text-align: center;
+    font-family: 'Average Sans', sans-serif;
+    margin-top: 25px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .footer__position{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    
+  }
+  
