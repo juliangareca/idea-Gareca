@@ -1,9 +1,27 @@
 #img{
     border-radius: 250px;
   }
-  
+  @media only screen and (max-width: 1800px) and (min-width: 620px){
   .width{
     width: 600px ;
     margin: auto;
   }
-  
+}
+@media only screen and (max-width: 620px){
+  .width{
+  display: none;
+  }
+}
+@media only screen and (max-width: 620px) and (min-width: 300px){
+
+.imagenCelu{
+  width: 300px ;
+  margin: auto;
+
+  }
+}
+@media only screen and (max-width: 1800px) and (min-width: 620px){
+  .imagenCelu{
+    display: none;
+  }
+}
