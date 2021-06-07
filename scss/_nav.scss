@@ -12,6 +12,9 @@ nav{
     width: -webkit-fill-available;
   
   }
+  .nav-item {
+    align-self: flex-end;
+  }
   
   ul ul {
   position: absolute;

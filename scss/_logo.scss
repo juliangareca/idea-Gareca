@@ -1,7 +1,17 @@
-#imagenLogo{
-    border-radius: 360px;
-    width: 100px;
-    height: 100px;
-    position: absolute;
+@media only screen and (max-width: 1800px) and (min-width: 450px){
+
+
+  #imagenLogo{
+      border-radius: 360px;
+      width: 100px;
+      height: 100px;
+      position: absolute; 
+    }
   }
-  
+    
+  @media only screen and (max-width: 450px){
+    #imagenLogo{
+    display: none;
+    }
+  }
+

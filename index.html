@@ -3,12 +3,13 @@
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="Rascadores" content="rascadores, gatos, juguetes, catlover, patagonia, sur, paraiso, familia, gimnasio" />
         <title>Paraisos del Sur</title>
-        <link rel="stylesheet" href="css/style.css">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
 		 rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
 		  crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">  
         <link rel="icon" type="image/png" href="./recursos/imagenes/favicon.ico" />
     </head>
 
@@ -17,7 +18,7 @@
 			<a href="index.html"><img src="./recursos/imagenes/logo.png" id="imagenLogo" alt="Este era el Logo"></a>
 			<nav class="navbar navbar-expand-lg navbar-light paddingNav">
 				<div class="container-fluid">
-				  <a class="navbar-brand" href="index.html">HOME</a>
+				  <a class="navbar-brand" href="./index.html">HOME</a>
 				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				  </button>
@@ -33,7 +34,7 @@
 						<a class="nav-link" href="Nosotros.html">Nosotros |</a>
 					  </li>
 					  <li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<a class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
 						  Productos |
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -55,7 +56,9 @@
 
 		<section class="grid"> 
 			
-			<div class="imagenGatos"></div>
+			<div class="imagenGatos">
+				<img src="./recursos/imagenes/Originales sin optimizar/muchosgatos2.jpg" alt="">
+			</div>
 			<div class="arriba">
 				<p>Promociones del mes</p>
 				<ul class="flexGrid">
@@ -71,8 +74,8 @@
  				</ul>
 			</div>
 		</section>
-		<div class="d-flex bd-highlight">
-			<div class="p-2 flex-fill bd-highlight">
+		<div class="row infoMain d-flex bd-highlight">
+			<div class="subInfo col-sm-4 flex-fill bd-highlight">
 				<h1 class="envios">
 					<svg class="camio" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M527.9 32H48.1C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48.1 48h479.8c26.6 0 48.1-21.5 48.1-48V80c0-26.5-21.5-48-48.1-48zM54.1 80h467.8c3.3 0 6 2.7 6 6v42H48.1V86c0-3.3 2.7-6 6-6zm467.8 352H54.1c-3.3 0-6-2.7-6-6V256h479.8v170c0 3.3-2.7 6-6 6zM192 332v40c0 6.6-5.4 12-12 12h-72c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12zm192 0v40c0 6.6-5.4 12-12 12H236c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12z"></path></svg>
 					MERCADO PAGO Y TRANSFERENCIA BANCARIA
@@ -81,7 +84,7 @@
 					¡18 cuotas sin interés con todas las tarjetas! o 15% OFF por transferencia bancaria
 				</p>
 			</div>
-			<div class="p-2 flex-fill bd-highlight">
+			<div class="subInfo col-sm-4 flex-fill bd-highlight">
 				<h1 class="envios">
 					<svg class="camio" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M624 368h-16V251.9c0-19-7.7-37.5-21.1-50.9L503 117.1C489.6 103.7 471 96 452.1 96H416V56c0-30.9-25.1-56-56-56H56C25.1 0 0 25.1 0 56v304c0 30.9 25.1 56 56 56h8c0 53 43 96 96 96s96-43 96-96h128c0 53 43 96 96 96s96-43 96-96h48c8.8 0 16-7.2 16-16v-16c0-8.8-7.2-16-16-16zm-464 96c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm208-96H242.7c-16.6-28.6-47.2-48-82.7-48s-66.1 19.4-82.7 48H56c-4.4 0-8-3.6-8-8V56c0-4.4 3.6-8 8-8h304c4.4 0 8 3.6 8 8v312zm48-224h36.1c6.3 0 12.5 2.6 17 7l73 73H416v-80zm64 320c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm80-100.9c-17.2-25.9-46.6-43.1-80-43.1-24.7 0-47 9.6-64 24.9V272h144v91.1z"></path></svg>
 					ENVÍOS A TODO EL PAÍS
@@ -90,7 +93,7 @@
 					Consultar valor por WhatsApp. El envío no esta incluido.
 				</p>
 			</div>
-			<div class="p-2 flex-fill bd-highlight">
+			<div class="subInfo col-sm-4 flex-fill bd-highlight">
 				<h1 class="envios">
 					<svg class="camio" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M483.515 28.485L431.35 80.65C386.475 35.767 324.485 8 256 8 123.228 8 14.824 112.338 8.31 243.493 7.971 250.311 13.475 256 20.301 256h28.045c6.353 0 11.613-4.952 11.973-11.294C66.161 141.649 151.453 60 256 60c54.163 0 103.157 21.923 138.614 57.386l-54.128 54.129c-7.56 7.56-2.206 20.485 8.485 20.485H492c6.627 0 12-5.373 12-12V36.971c0-10.691-12.926-16.045-20.485-8.486zM491.699 256h-28.045c-6.353 0-11.613 4.952-11.973 11.294C445.839 370.351 360.547 452 256 452c-54.163 0-103.157-21.923-138.614-57.386l54.128-54.129c7.56-7.56 2.206-20.485-8.485-20.485H20c-6.627 0-12 5.373-12 12v143.029c0 10.691 12.926 16.045 20.485 8.485L80.65 431.35C125.525 476.233 187.516 504 256 504c132.773 0 241.176-104.338 247.69-235.493.339-6.818-5.165-12.507-11.991-12.507z"></path></svg>       
 
@@ -116,4 +119,3 @@
 	</body>
 
 </html>
-

@@ -1,10 +1,15 @@
+
+
+
+@media only screen and (max-width: 1800px) and (min-width: 770px)
+ {
+
 .grid{
     background-color: beige;
-    width: 90vw;
-    height: 60vh;
-    border: 2px;
-    margin-left: 5%;
-    margin-bottom: 3%;
+    align-self: center;
+    width: 70%; 
+    /* height: 60vh; */
+    /* margin-left: 5%; */
     display: grid;
     grid-area: section;
     grid-template-columns: 75% 25%;
@@ -17,9 +22,8 @@
   
   .imagenGatos{
     grid-area: img;
-    background-image: url(../recursos/imagenes/muchosgatos2.jpg);
-    background-position: center;
-    background-size: cover;
+    width: 100%;
+    height: 100%;
   }
   
   .arriba{
@@ -29,4 +33,44 @@
     text-align: center;
     background: linear-gradient(90deg, rgba(233,223,215,1) 11%, rgba(103,103,103,1) 100%);  
     padding: 20px; 
+  
   }
+}
+
+@media only screen and (max-width: 770px) 
+ {
+  .grid{
+    /* background-color: beige; */
+    /* height: 60vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imagenGatos{
+    grid-area: img;
+  }
+
+  .arriba{
+    display: none;
+  }
+  
+  
+}
+
+.imagenGatos{ 
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*Evios*/
+.infoMain {
+  margin-top: 1rem;
+  .subInfo {
+    padding: 1rem 2rem;
+  }
+}
+
+
