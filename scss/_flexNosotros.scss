@@ -4,16 +4,9 @@
     align-items: stretch;
     align-content: center;
     padding-left: 15px;
+    justify-content: center;
     
 }
-
-  .kibita{
-    width: 450px;
-    grid-area: kibita;
-    background-image: url(../recursos/imagenes/kibita.JPG);
-    background-position: center;
-    background-size: cover;
-  }
 
   .tituloNosotros{
     text-align: justify;
@@ -25,5 +18,28 @@
     padding: 15px;
 
   }
-
+@media only screen and (min-width: 1100px){
+  .kibita{
+    width: 450px;
+    grid-area: kibita;
+    background-image: url(../recursos/imagenes/kibita.JPG);
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 1100px){
+  .kibita{
+  display: none; 
+ }
+}
+@media only screen and (max-width: 1100px){
+  .kibita2{
+  width: 450px;
+  }
+}
+@media only screen and (min-width: 1101px){
+  .kibita2{
+  display: none;
+  }
+}
 
