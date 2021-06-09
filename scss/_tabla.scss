@@ -6,6 +6,15 @@
   .imagenTabla{
     width: 200px;
   }
+  .formatoTabla{
+    width: max-content;
+    text-align: center;
+    margin: auto;
+    background-color: #ffffff91;
+    padding: 50px;
+    border-width: 2px;
+  }
+
 
   .tienda {
     display: flex;
