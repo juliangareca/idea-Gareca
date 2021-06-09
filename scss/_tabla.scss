@@ -1,76 +1,66 @@
+  .imagenTabla:hover{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transition:all 1s ease-in-out;}
 
+    
   .tienda {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
-      .producto {
-          width: 80%;
-          text-align: center;
-          padding: 2rem;
-          margin: 2rem;
-          -webkit-box-shadow: 1px 1px 60px -1px rgba(0, 0, 0, 0.75);
-          -moz-box-shadow: 1px 1px 34px -1px rgba(0, 0, 0, 0.75);
-          box-shadow: 1px 1px 34px -1px rgba(0, 0, 0, 0.75);
-          border: 0px solid #000000;
+    .producto {
+        width: 80%;
+        text-align: center;
+        padding: 2rem;
+        background-color: white;
+        margin: 2rem;
+        -webkit-box-shadow: 1px 1px 60px -1px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 1px 1px 34px -1px rgba(0, 0, 0, 0.75);
+        box-shadow: 1px 1px 34px -1px rgba(0, 0, 0, 0.75);
+        border: 0px solid #000000;
 
-          &:hover {
-              transform: scale(1.1);
-              transition: 0.8s;
-          }
+        &:hover {
+            transform: scale(1.1);
+            transition: 0.8s;
+        }
 
-          select {
-              max-width: 2.5rem;
-          }
-
-
-          a {
-              color: black;
-          }
-
-          span {
-              font-weight: 700;
-          }
-      }
+        select {
+            max-width: 2.5rem;
+        }
 
 
-  }
-  @media only screen and (min-width: 768px) {
-    .main{
-        .tienda {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
+        a {
+            color: black;
+        }
 
-            .producto {
-                width: 40%;
-            }
+        span {
+            font-weight: 700;
         }
     }
+
+
+}
+@media only screen and (max-width: 998px) {
+      .tienda {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+
+          .producto {
+              width: 40%;
+          }
+  }
 }
 
 
 @media only screen and (min-width: 998px) {
-    .main {
-        .tienda {
-            .oculto {
-                display: block;
-            }
+      .tienda {
+              display: flex;
+          }
 
-            .producto {
-                width: 20%;
-            }
-        }
-    }
-}
+          .producto {
+              width: 20%;
+      }
+  }
 
-@media only screen and (min-width: 1200px) {
-    .main {
-        .tienda {
-            .producto {
-                width: 22%;
-            }
-        }
-    }
-    
-}

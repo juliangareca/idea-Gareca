@@ -8,8 +8,6 @@
     background-color: beige;
     align-self: center;
     width: 70%; 
-    /* height: 60vh; */
-    /* margin-left: 5%; */
     display: grid;
     grid-area: section;
     grid-template-columns: 75% 25%;
@@ -40,8 +38,6 @@
 @media only screen and (max-width: 770px) 
  {
   .grid{
-    /* background-color: beige; */
-    /* height: 60vh; */
     display: flex;
     justify-content: center;
     align-items: center;
