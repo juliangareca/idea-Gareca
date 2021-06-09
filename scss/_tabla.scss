@@ -1,39 +1,76 @@
-.formatoTabla{
-    width: max-content;
-    text-align: center;
-    margin: auto;
-    background-color: #ffffff91;
-    padding: 50px;
-    border-width: 2px;
-  }
 
-.imputColor{
-  background-color: $imputColor;
+  .tienda {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .producto {
+          width: 80%;
+          text-align: center;
+          padding: 2rem;
+          margin: 2rem;
+          -webkit-box-shadow: 1px 1px 60px -1px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: 1px 1px 34px -1px rgba(0, 0, 0, 0.75);
+          box-shadow: 1px 1px 34px -1px rgba(0, 0, 0, 0.75);
+          border: 0px solid #000000;
+
+          &:hover {
+              transform: scale(1.1);
+              transition: 0.8s;
+          }
+
+          select {
+              max-width: 2.5rem;
+          }
+
+
+          a {
+              color: black;
+          }
+
+          span {
+              font-weight: 700;
+          }
+      }
+
+
+  }
+  @media only screen and (min-width: 768px) {
+    .main{
+        .tienda {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .producto {
+                width: 40%;
+            }
+        }
+    }
 }
-  
-  
-  table {
-    border: 5px solid;
-    background-color: white;
-    // margin: 50px;
-    margin-right: 500px;
-  }
-  
-  
-  tr, td {
-    text-align: center;
-    justify-content: center ;
+
+
+@media only screen and (min-width: 998px) {
+    .main {
+        .tienda {
+            .oculto {
+                display: block;
+            }
+
+            .producto {
+                width: 20%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .main {
+        .tienda {
+            .producto {
+                width: 22%;
+            }
+        }
+    }
     
-  }
-
-  .hipervinculo{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-family: 'Noto Sans JP', sans-serif;
-  }
-  
-
-  .imagenTabla:hover{
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-    transition:all 1s ease-in-out;}
+}
