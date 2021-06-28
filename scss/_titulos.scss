@@ -16,6 +16,7 @@
   
   .h1{
     text-decoration: overline;
+    padding-top: 1rem;
     font-family: $fontFamily1;
     animation: 2s alternate slidein; 
     
@@ -24,27 +25,12 @@
   .h3{
     font-family: $fontFamily1;
     text-align: center;
-    animation: 3s alternate slidein2; 
+    animation: 3s alternate slidein; 
 
 
   }
   
   @keyframes slidein {
-    from {
-      margin-left:100%;
-      width:300%
-    }
-  
-    to {
-     margin-left: 79%;
-     width:100%;
-   }
-   
-  }
-  
- 
-  
-  @keyframes slidein2 {
     from {
       margin-left: 100%;
     }

@@ -1,0 +1,45 @@
+Presupuesto para Paraisos del Sur.
+
+13/6/2021
+
+Vigencia 14 dias.
+
+El sistema cumple la necesidad de E-commerce.
+
+Se entregaran 4 etapas 
+
+Diseño
+Estructura
+Funcionalidades de modo carrito
+SEO
+
+Entregable 1:
+
+Diseño de las 5 paginas / Home / quienes somos / productos y submenues / contactenos / clientes felices (6 hs)
+Diseño de frameworks. (1 hs)
+
+Entregable 2:
+
+Codigos de todas las paginas. (20 hs)
+
+Entregable 3:
+
+Backend para la utilizacion del sistema de compras (20 hs)
+
+Entregable 4:
+
+Testing de la pagina (1 hs)
+Implementacion de seguridad para el SITIO (1 hs)
+Subida al servidor (pago) (1 hs)
+
+
+Mantenimiento de la pag. (mensual) 50 ussd mensuales
+Valor hora: $250
+
+Total: 50 hs - $12.500
+
+Términos y
+Condiciones
+* El pago se ralizará 50% al iniciar el proyecto y 50% al finalizar.
+* Una vez aprobado el pressupuesto se redactará un breve contrato que tendrá que ser
+firmado por cliente y proveerdor con los servicios y clausulas detallados.
